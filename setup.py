@@ -1,13 +1,13 @@
 from setuptools import setup
 
-from common import __version__
+from setuptools import find_packages
 
 setup(
     name='ccp_common',
-    version=__version__,
+    version="0.1.0",
     url='https://github.com/Cloud-Computing-People/common',
-    author='Aakash Aanegola'
-    py_modules=packages=find_packages(),
+    author='Aakash Aanegola',
+    py_modules=find_packages(),
     install_requires=[
         'starlette',
         'pymysql',
